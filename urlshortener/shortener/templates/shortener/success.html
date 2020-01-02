@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="cover-heading">Success</h1>
+<p class="lead">{{ obj.url }}</p>
+<p class="lead"><a href="{{ obj.get_short_url }}">{{ obj.get_short_url }}</a></p>
+<a class="btn btn-success" href="/">New</a>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h1 class="cover-heading">Exists</h1>
+<p class="lead">{{ obj.url }}</p>
+{% if obj.clickevent %}<p>Count: {{ obj.clickevent.count }}</p>{% endif %}
+<p class="lead"><a href="{{ obj.get_short_url }}">{{ obj.get_short_url }}</a></p>
+<a class="btn btn-success" href="/">New</a>
+
+
+{% endblock %}
